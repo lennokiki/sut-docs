@@ -64,7 +64,7 @@ const color1 = stringColor16ToRgb('#000')
 const color2 = stringColor16ToRgb('#eaef33')
 
 // Output `RGB(234,239,51)`
-const color2 = stringColor16ToRgb('#EAEF33')
+const color3 = stringColor16ToRgb('#EAEF33')
 ```
 
 ## stringColorRgbTo16(string)
@@ -91,8 +91,8 @@ const letter1 = stringNumToLetter(0)
 const letter2 = stringNumToLetter(25, 'lower')
 
 // Output `aa`
-const letter2 = stringNumToLetter(26, 'lower')
+const letter3 = stringNumToLetter(26, 'lower')
 
 // Output `ZA`
-const letter3 = stringNumToLetter(26 * 26)
+const letter4 = stringNumToLetter(26 * 26)
 ```

@@ -64,13 +64,13 @@ const res3 = rgAllowInteger(yourInputValue, '-')
 ### [Use rgallowflow in Vue to limit input floating point](http://jsrun.pro/EvfKp/edit)
 ```
 // Only positive and negative floating-point values are allowed, and the number of decimal places is not more than 2 by default
-const res = rgAllowFloat(yourInputValue)
+const res1 = rgAllowFloat(yourInputValue)
  
 // It is only allowed to input no more than 4 decimal places, no more than 5 integers and positive numbers
-const res = rgAllowFloat(yourInputValue, 4, '+', 5)
+const res2 = rgAllowFloat(yourInputValue, 4, '+', 5)
  
 // Only the decimal place is allowed to be input no more than 1, and the integer place is not allowed to be input more than 7, negative
-const res = rgAllowFloat(yourInputValue, 1, '-', 7)
+const res3 = rgAllowFloat(yourInputValue, 1, '-', 7)
 ```
 
 ## rgIsPhone(str)
@@ -143,13 +143,13 @@ const res = rgIsPC()
 
 ```
 // Add thousands, output `12,345.34`
-const res = rgThousandMark(12345.34)
+const res1 = rgThousandMark(12345.34)
 
 // Add thousands, output `The number 1,112,223,334.5564 and 111 and 222,333 and 32,123.1`
-const res = rgThousandMark('The number 1112223334.5564 and 111 and 222333 and 32123.1')
+const res2 = rgThousandMark('The number 1112223334.5564 and 111 and 222333 and 32123.1')
 
 // Decimation, output `12345.34`
-const res = rgThousandMark('12,345.34', '-')
+const res3 = rgThousandMark('12,345.34', '-')
 ```
 
 ## rgBrowserType(isTest360?: boolean)

@@ -2,7 +2,7 @@ const path = require('path')
 
 module.exports = {
   title: 'simple-utils-tiny',
-  // base: '/docs/sut/',
+  base: '/sut/',
   dest: path.join(__dirname, '../dist'),
   head: [
     ['link', { rel: 'icon', href: '/images/favicon3.ico' }],

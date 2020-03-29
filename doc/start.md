@@ -12,6 +12,12 @@
 ```
 npm i simple-utils-tiny -S
 ```
+or
+
+```
+yarn add simple-utils-tiny
+```
+
 
 ### Script
 

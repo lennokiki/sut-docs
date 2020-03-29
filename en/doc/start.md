@@ -13,6 +13,12 @@ Install node environment
 npm i simple-utils-tiny -S
 ```
 
+or
+
+```
+yarn add simple-utils-tiny
+```
+
 ### Script
 
 Import simple-utils-tiny.min.js under dist directory to download to local or use CDN

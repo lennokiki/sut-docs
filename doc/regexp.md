@@ -66,13 +66,13 @@ const res3 = rgAllowInteger(yourInputValue, '-')
 
 ```
 // 只允许输入正负数值浮点型数值，且小数位默认不超过2位
-const res = rgAllowFloat(yourInputValue)
+const res1 = rgAllowFloat(yourInputValue)
  
 // 只允许输入小数位不超过4位，整数位不超过5位，正数
-const res = rgAllowFloat(yourInputValue, 4, '+', 5)
+const res2 = rgAllowFloat(yourInputValue, 4, '+', 5)
  
 // 只允许输入小数位不超过1位，整数位不超过7位，负数
-const res = rgAllowFloat(yourInputValue, 1, '-', 7)
+const res3 = rgAllowFloat(yourInputValue, 1, '-', 7)
 ```
 
 ## rgIsPhone(str)
@@ -145,13 +145,13 @@ const res = rgIsPC()
 
 ```
 // 添加千分符，输出`12,345.34`
-const res = rgThousandMark(12345.34)
+const res1 = rgThousandMark(12345.34)
 
 // 添加千分符，输出`The number 1,112,223,334.5564 and 111 and 222,333 and 32,123.1`
-const res = rgThousandMark('The number 1112223334.5564 and 111 and 222333 and 32123.1')
+const res2 = rgThousandMark('The number 1112223334.5564 and 111 and 222333 and 32123.1')
 
 // 去除千分符，输出`12345.34`
-const res = rgThousandMark('12,345.34', '-')
+const res3 = rgThousandMark('12,345.34', '-')
 ```
 
 ## rgBrowserType(isTest360?: boolean)
