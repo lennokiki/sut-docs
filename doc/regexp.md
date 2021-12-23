@@ -14,7 +14,7 @@ rgIsInteger(-123)
 rgIsInteger(123, '+')
 // 指定为正数，返回`false`
 rgIsInteger(-123, '+')
- 
+
  // 指定为负数，返回`false`
 rgIsInteger(123, '-')
 // 指定为负数，返回`true`
@@ -30,12 +30,12 @@ rgIsInteger(-123, '-')
 rgIsFloat(123.24)
 // 负浮点型，返回`true`
 rgIsFloat(-123.24)
- 
+
 // 指定为正浮点型，返回`true`
 rgIsFloat(123.24, '+')
 // 指定为正浮点型，返回`false`
 rgIsFloat(-123.24, '+')
- 
+
 // 指定为负浮点型，返回`false`
 rgIsFloat(123.24, '-')
 // 指定为负浮点型，返回`true`
@@ -45,32 +45,35 @@ rgIsFloat(-123.24, '-')
 ## rgAllowInteger(num[, len, type])
 
 ### 限制输入指定类型或者长度的数字，特别是输入金额类型的数据，理论上不应当能输入字母或者其他非数字的东西。此函数可直接过滤条件外的其他内容。
-### React当中的input表单等控件只要设置了value即为完全受控组件，所以不需要对输入内容进行replace的正则替换。但是像vue或者传统模式下的表单无法控制用户输入的内容，所以只能进行replace替换
-### [vue当中使用rgAllowInteger限制输入整型](http://jsrun.pro/PvfKp/edit)
+
+### React 当中的 input 表单等控件只要设置了 value 即为完全受控组件，所以不需要对输入内容进行 replace 的正则替换。但是像 vue 或者传统模式下的表单无法控制用户输入的内容，所以只能进行 replace 替换
+
+### [vue 当中使用 rgAllowInteger 限制输入整型](http://jsrun.pro/PvfKp/edit)
 
 ```
 // 只允许输入整数，长度无限制
 const res1 = rgAllowInteger(yourInputValue)
 
 // 只允许输入正整数，且长度不能超过5位数
-const res2 = rgAllowInteger(yourInputValue, '+', 5)
+const res2 = rgAllowInteger(yourInputValue, 5, '+')
 
 // 只允许输入负整数，长度无限制
-const res3 = rgAllowInteger(yourInputValue, '-')
+const res3 = rgAllowInteger(yoruInputValue, Number.POSITIVE_INFINITY, '-')
 ```
 
 ## rgAllowFloat(str[, floatLen, type, integerLen])
 
 ### 限制输入指定浮点型长度、类型、整型长度的浮点小数，原理同上
-### [vue当中使用rgAllowFloat限制输入浮点型](http://jsrun.pro/EvfKp/edit)
+
+### [vue 当中使用 rgAllowFloat 限制输入浮点型](http://jsrun.pro/EvfKp/edit)
 
 ```
 // 只允许输入正负数值浮点型数值，且小数位默认不超过2位
 const res1 = rgAllowFloat(yourInputValue)
- 
+
 // 只允许输入小数位不超过4位，整数位不超过5位，正数
 const res2 = rgAllowFloat(yourInputValue, 4, '+', 5)
- 
+
 // 只允许输入小数位不超过1位，整数位不超过7位，负数
 const res3 = rgAllowFloat(yourInputValue, 1, '-', 7)
 ```
@@ -133,7 +136,7 @@ const res = rgIsUrl(str)
 
 ## rgIsPC
 
-### 判断当前环境是否为pc环境
+### 判断当前环境是否为 pc 环境
 
 ```
 const res = rgIsPC()
@@ -157,9 +160,9 @@ const res3 = rgThousandMark('12,345.34', '-')
 ## rgBrowserType(isTest360?: boolean)
 
 ### 判断当前浏览器是什么型号，能识别以下浏览器：IE+Version、Edge、FF、Wechat、QQ、Maxthon、Safari、UC、Opear、Sougou、360、Chrome
-### 如果需要识别360浏览器需要传递参数`true`
+
+### 如果需要识别 360 浏览器需要传递参数`true`
 
 ```
 const res = rgBrowserType()
 ```
-
